@@ -1,0 +1,30 @@
+
+
+
+public class Demo {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter starting number");
+        int start = s.nextInt();
+
+        System.out.println("Enter ending number");
+        int end = s.nextInt();
+
+        System.out.println("Prime numbers between the range:");
+
+        for (int num = start; num <= end; num++) {
+            if (num > 1) {
+                int count = 0;
+
+                for (int i = 1; i <= num; i++) {
+                    if (num % i == 0) {
+                        count++;
+                    }
+                }
+
+                if (count == 2) {
+                    System.out.println(num);
+                }
+            }
+        }
