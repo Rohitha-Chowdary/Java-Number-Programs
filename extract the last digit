@@ -1,0 +1,10 @@
+package programming;
+
+public class Demo {
+    public static void main(String[] args) {
+        int num=12378;
+        System.out.println(num%10);
+        System.out.println(num/10);
+
+    }
+}
